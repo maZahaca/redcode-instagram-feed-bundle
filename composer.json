@@ -1,0 +1,26 @@
+{
+    "name": "redcode/instagram-feed-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 instagram tag feed bundle",
+    "keywords": ["instagram", "tag", "photo", "loader", "Symfony2", "bundle"],
+    "homepage": "https://github.com/maZahaca/redcode-instagram-feed-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Reddikh",
+            "email": "mazahaco@gmail.com",
+            "homepage": "https://github.com/maZahaca"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.4",
+        "symfony/framework-bundle": ">=2.0,<2.3-dev",
+        "fishmarket/instaphp": "dev-master",
+        "doctrine/doctrine-bundle": "*"
+    },
+    "autoload": {
+        "psr-0": { "RedCode\\InstagramFeedBundle": "" }
+    },
+    "target-dir": "RedCode/InstagramFeedBundle"
+}
