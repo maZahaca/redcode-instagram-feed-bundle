@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="RedCode\InstagramFeedBundle\Entity\InstagramImage">
+        <field name="imageSrc" column="image_src" type="string" length="200" />
+        <field name="createdAt" column="created_at" type="datetime"/>
+        <field name="imageThumbnail" column="imageThumbnail" type="string" length="200"/>
+        <field name="username" column="username" type="string" length="50"/>
+        <field name="userProfilePicture" column="user_pic" type="string" length="200"/>
+        <field name="approved" column="approved" type="boolean"/>
+    </mapped-superclass>
+
+</doctrine-mapping>

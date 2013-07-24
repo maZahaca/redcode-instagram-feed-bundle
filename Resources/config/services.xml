@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="redcode.instagram.app.client_id"></parameter>
+        <parameter key="redcode.instagram.tag.class"></parameter>
+        <parameter key="redcode.instagram.image.class"></parameter>
+        <parameter key="redcode.instagram.app.auto_approve.users"></parameter>
+        <parameter key="redcode.instagram.app.load.start_from"></parameter>
+        <parameter key="redcode.instagram.app.auto_approve_rules"></parameter>
+    </parameters>
+
+    <services>
+        <service id="redcode.instagram.rule_approver" class="RedCode\InstagramFeedBundle\Service\ApproveRule\ApproveRuleManager">
+            <argument type="collection">
+            </argument>
+        </service>
+    </services>
+
+</container>
